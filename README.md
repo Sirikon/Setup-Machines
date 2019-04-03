@@ -26,3 +26,19 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 sudo apt-get install sublime-merge sublime-text
 ```
+
+### Priorize KeepassXC repository on Pop! OS
+
+Inside `/etc/apt/preferences.d/extra-settings`
+
+```
+Package: keepassxc
+Pin: release o=LP-PPA-phoerious-keepassxc
+Pin-Priority: 2000
+```
+
+Then
+
+```
+sudo apt update
+```
