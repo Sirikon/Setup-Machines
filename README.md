@@ -49,7 +49,15 @@ sudo apt update
 
 ### Fix wrong time on every reboot when having dual boot
 
+```bash
+# Steps to do first in Linux
+ntpdate pool.ntp.org
+hwclock –systohc –utc
+```
+
 - Enter regedit (`Windows + R` -> `regedit`).
 - Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation`.
 - Add `DWORD (32-bit)` with key `RealTimeIsUniversal`.
 - Set the value to `1`.
+
+https://windowsreport.com/fix-windows-10-clock/
