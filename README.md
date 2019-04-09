@@ -1,4 +1,6 @@
-# Setup Linux Machines
+# Setup Machines
+
+## Linux
 
 ### Nvidia Graphics
 
@@ -42,3 +44,12 @@ Then
 ```
 sudo apt update
 ```
+
+## Windows
+
+### Fix wrong time on every reboot when having dual boot
+
+- Enter regedit (`Windows + R` -> `regedit`).
+- Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation`.
+- Add `DWORD (32-bit)` with key `RealTimeIsUniversal`.
+- Set the value to `1`.
