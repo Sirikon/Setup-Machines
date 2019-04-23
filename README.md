@@ -29,9 +29,25 @@ sudo apt-get update
 sudo apt-get install sublime-merge sublime-text
 ```
 
-### Priorize KeepassXC repository on Pop! OS
+### Dropbox icon on status bar
 
-Inside `/etc/apt/preferences.d/extra-settings`
+From: https://pop.system76.com/docs/status-icons/
+
+```
+sudo apt install gnome-shell-extension-appindicator
+gnome-shell-extension-prefs
+```
+
+**Enable the last extension**.
+
+### KeepassXC repository on Pop! OS
+
+Run:
+```
+sudo add-apt-repository ppa:phoerious/keepassxc
+```
+
+Then, inside `/etc/apt/preferences.d/extra-settings` write this:
 
 ```
 Package: keepassxc
@@ -39,10 +55,11 @@ Pin: release o=LP-PPA-phoerious-keepassxc
 Pin-Priority: 2000
 ```
 
-Then
+Finally
 
 ```
 sudo apt update
+sudo apt install keepassxc
 ```
 
 ## Windows
