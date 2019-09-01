@@ -62,6 +62,13 @@ sudo apt update
 sudo apt install keepassxc
 ```
 
+### Show seconds in Gnome3 top clock
+
+```bash
+sudo apt install gnome-tweak-tool
+gnome-tweaks # And use the GUI for that
+```
+
 ## Windows
 
 ### Fix wrong time on every reboot when having dual boot
