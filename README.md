@@ -69,6 +69,12 @@ sudo apt install gnome-tweak-tool
 gnome-tweaks # And use the GUI for that
 ```
 
+### Display only current workspace's programs in Ubuntu Dock
+
+```bash
+gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true
+```
+
 ## Windows
 
 ### Fix wrong time on every reboot when having dual boot
