@@ -75,6 +75,20 @@ gnome-tweaks # And use the GUI for that
 gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true
 ```
 
+### Some random WiFi or wired network doesn't resolve DHCP properly.
+
+```bash
+# See if there are dhcp problems in syslog
+cat /var/log/syslog | grep <network-card>
+# Check if dhcp resolution works with dhclient
+sudo dhclient -v <network-card>
+```
+
+Add this to `main` section in `/etc/NetworkManager/NetworkManager.conf`. [Docs](https://developer.gnome.org/NetworkManager/stable/NetworkManager.conf.html).
+```
+dhcp=dhclient
+```
+
 ## Windows
 
 ### Fix wrong time on every reboot when having dual boot
