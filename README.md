@@ -2,6 +2,10 @@
 
 ## Linux
 
+### Intel Graphics
+
+https://askubuntu.com/questions/857123/how-to-tweak-intel-hd-graphics-on-ubuntu-16-04 .
+
 ### Nvidia Graphics
 
 ```bash
