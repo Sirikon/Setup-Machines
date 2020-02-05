@@ -44,6 +44,20 @@ gnome-shell-extension-prefs
 
 **Enable the last extension**.
 
+### APT Repository Pinning
+
+The following command displays all the repositories and all their options to use in Pin filter.
+```
+apt-cache policy
+```
+
+Then add the following to `/etc/apt/preferences.d/extra-settings`:
+```
+Package: <package name>
+Pin: <the selected filter>
+Pin-Priority: 2000
+```
+
 ### KeepassXC repository on Pop! OS
 
 Run:
