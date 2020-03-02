@@ -85,6 +85,8 @@ sudo apt install keepassxc
 ```bash
 sudo apt install gnome-tweak-tool
 gnome-tweaks # And use the GUI for that
+# Or
+gsettings set org.gnome.desktop.interface clock-show-seconds true
 ```
 
 ### Display only current workspace's programs in Ubuntu Dock
