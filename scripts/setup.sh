@@ -19,6 +19,7 @@ function start {
 	install-apt-repository "sublime-text" 	"deb https://download.sublimetext.com/ apt/stable/"
 	install-apt-repository "vscode" 		"deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 	install-apt-repository "dbeaver" 		"deb https://dbeaver.io/debs/dbeaver-ce /"
+	# https://linux.dropboxstatic.com/ubuntu/dists/cosmic/ ?
 	install-ppa "ppa:phoerious/keepassxc"
 	log-sep
 
